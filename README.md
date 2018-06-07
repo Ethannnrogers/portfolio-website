@@ -7,3 +7,5 @@ using CSS webkit-animations and jQuery to catch how the user is scrolling throug
 
 I hooked up the contact form using nodemailer. 
 
+Check out the site at https://ethanrogers-portfolio.herokuapp.com
+
