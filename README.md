@@ -9,3 +9,5 @@ I hooked up the contact form using nodemailer.
 
 Check out the site at https://ethanrogers-portfolio.herokuapp.com
 
+or check out the video demo above
+
