@@ -402,22 +402,24 @@ a {
 
 
 #iframe-1 {
-    height: 600px;
+    height: 550px;
     width: 87%;
     border: 5px solid rgb(223, 60, 60);
     margin-top: -10px;
     position: relative;
     z-index: 999;
+    padding-bottom: 50px;
     
 }
 
 #iframe-2 {
-    height: 600px;
+    height: 550px;
     width: 87%;
     border: 5px solid rgb(223, 60, 60);
     margin-top: -10px;
     position: relative;
     z-index: 999;
+    padding-bottom: 50px;
     
 }
 
