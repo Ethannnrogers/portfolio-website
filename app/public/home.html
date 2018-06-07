@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ethan Rogers</title>
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Dosis|Hind" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function () {
+            $('#leader').hide();
+            $('#leader-text').hide();
+            $('#thinker').hide();
+            $('#thinker-text').hide();
+            $('#thinker-2').hide();
+            $('#thinker-text-2').hide();
+            $('#student').hide();
+            $('#student-text').hide();
+            $('#creator').hide();
+            $('#creator-text').hide();
+            $('#creator-2').hide();
+            $('#creator-text-2').hide();
+            $('#name-2').hide();
+            $('#first-div').hide();
+            $('#nav').hide();
+            $('#second-div').hide();
+
+            $("#form").submit(function(e) {
+                console.log("submitted");
+                e.preventDefault();
+                let email = $('#email').val().trim();
+                let preMessage = $("#message").val().trim();
+                let message = email + " | " + preMessage;
+                let name = $('#first-name').val().trim() + " " + $('#last-name').val().trim();
+                console.log(message, email, name);
+                let postData = { 
+                    name: name,
+                    email: email,
+                    message: message
+                }
+                $.ajax({
+                    type: "POST",
+                    url: "/send",
+                    data: postData,
+                });
+                $("#message").val("");
+                $('#email').val("");
+                $('#first-name').val("");
+                $("#last-name").val("");
+            });
+
+            $('#project-btn').on("click", function() {
+            console.log("clicked");
+            // $("iframe").addClass("hide");
+            $("#inner-frame-cover").fadeIn();
+            $('#frame-cover').show();
+            $('#frame-cover').addClass("frame-cover-appear");
+            $('#frame-cover').removeClass('frame-cover-appear-opposite');
+            $('#project-btn').hide();
+            $('#project-btn-2').show();
+
+            $('#project-btn-2').on("click", function() {
+                $("#inner-frame-cover").hide();
+                $('#frame-cover').removeClass('frame-cover-appear');
+                $('#frame-cover').addClass('frame-cover-appear-opposite');
+                $('#project-btn-2').hide();
+                $('#project-btn').show();
+                
+            })
+            
+        })
+
+        $('#resume-btn').on("click", function() {
+            console.log("clicked");
+            $("#inner-resume-cover").fadeIn();
+            $('#resume-cover').show();
+            $('#resume-cover').addClass("resume-cover-appear");
+            $('#resume-cover').removeClass('resume-cover-appear-opposite');
+            $('#resume-btn').hide();
+            $('#resume-btn-2').show();
+
+            $('#resume-btn-2').on("click", function() {
+                $("#inner-resume-cover").hide();
+                $('#resume-cover').removeClass('resume-cover-appear');
+                $('#resume-cover').addClass('resume-cover-appear-opposite');
+                $('#resume-btn-2').hide();
+                $('#resume-btn').show();
+                
+            })
+            
+        })
+        });
+
+
+        $(document).scroll(function () {
+            $('#soft-skills').addClass("logical-height");
+
+            var y = $(this).scrollTop();
+            if (y > 1) {
+                $('#landing-div').hide();
+                $('#name-2').fadeIn();
+                $('#position').addClass("bg-color");
+            } else {
+                $('#landing-div').fadeIn();
+                $('#position').removeClass("bg-color");
+            }
+            if (y > 100 && y < 110) {
+                // $('#nav').fadeOut();
+            } else {
+                // $('#nav').fadeOut();
+            }
+            if (y > 100) {
+                $('#leader').fadeIn();
+                $('#line').addClass("line-exist");
+            } else {
+                $('#leader').fadeOut();
+                $('#line').removeClass("line-exist");
+            }
+            if (y > 150) {
+                $('#leader-text').fadeIn();
+            } else {
+                $('#leader-text').fadeOut();
+            }
+            if (y > 300) {
+                $('#thinker').fadeIn();
+                $('#thinker-2').fadeIn();
+                $('#nav').slideDown("slow").show();
+            } else {
+                $('#thinker').fadeOut();
+                $('#thinker-2').fadeOut();
+                $('#nav').fadeOut();
+                $('#first-div').hide();
+                $('#second-div').hide();
+            }
+            if (y > 350) {
+                $('#thinker-text').fadeIn();
+                $('#thinker-text-2').fadeIn();
+            } else {
+                $('#thinker-text').fadeOut();
+                $('#thinker-text-2').fadeOut();
+            }
+
+            if (y > 500) {
+                $('#student').fadeIn();
+            } else {
+                $('#student').fadeOut();
+            }
+            if (y > 550) {
+                $('#student-text').fadeIn();
+            } else {
+                $('#student-text').fadeOut();
+            }
+
+            if (y > 700) {
+                $('#creator').fadeIn();
+                $('#creator-2').fadeIn();
+            } else {
+                $('#creator').fadeOut();
+                $('#creator-2').fadeOut();
+            }
+            if (y > 750) {
+                $('#creator-text').fadeIn();
+                $('#creator-text-2').fadeIn();
+            } else {
+                $('#creator-text').fadeOut();
+                $('#creator-text-2').fadeOut();
+
+            }
+            if (y > 1150) {
+                $("#perc-html").addClass("animated-bar-95");
+            } else {
+                $("#perc-html").removeClass("animated-bar-95");
+            }
+            if (y > 1200) {
+                $("#perc-css").addClass("animated-bar-95");
+            } else {
+                $("#perc-css").removeClass("animated-bar-95");
+            }
+            if (y > 1250) {
+                $("#perc-js").addClass("animated-bar-70");
+            } else {
+                $("#perc-js").removeClass("animated-bar-70");
+            }
+            if (y > 1300) {
+                $("#perc-node").addClass("animated-bar-60");
+            } else {
+                $("#perc-node").removeClass("animated-bar-60");
+            }
+            if (y > 1350) {
+                $("#perc-express").addClass("animated-bar-60");
+            } else {
+                $("#perc-express").removeClass("animated-bar-60");
+            }
+            if (y > 1400) {
+                $("#perc-react").addClass("animated-bar-40");
+            } else {
+                $("#perc-react").removeClass("animated-bar-40");
+            }
+            if (y > 1500) {
+                $("#perc-git").addClass("animated-bar-80");
+            } else {
+                $("#perc-git").removeClass("animated-bar-80");
+            }
+            if (y > 1600) {
+                $("#perc-photo").addClass("animated-bar-95");
+            } else {
+                $("#perc-photo").removeClass("animated-bar-95");
+            }
+            if (y > 1700) {
+                $("#perc-seo").addClass("animated-bar-90");
+            } else {
+                $("#perc-seo").removeClass("animated-bar-90");
+            }
+            if (y > 1800) {
+                $("#perc-mbf").addClass("animated-bar-85");
+            } else {
+                $("#perc-mbf").removeClass("animated-bar-85");
+            }
+            $('#soft-skills').addClass("logical-height");
+
+            //footer navbar 
+            // $(window).scroll(function () {
+            //     if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            //         $('#nav').slideDown("slow").show();
+            //     }
+
+            // });
+
+
+
+            $('#more-btn').on("click", function () {
+                $('#first-div').slideDown("slow").show();
+            })
+
+            $('#less-title').on("click", function () {
+                $('#nav').hide();
+                $('#first-div').slideDown().show();
+                // $('#frame-cover').hide();
+                $('#inner-frame-cover').hide();
+                $('#project-btn-2').hide();
+            });
+
+            $('#my-resume-nav').on("click", function() {
+                $('#nav').hide();
+                $('#second-div').slideDown().show();
+                $('#inner-resume-cover').hide();
+                $('#resume-btn-2').hide();
+                
+            })
+
+            $('#resume-btn-leave').on("click", function () {
+                
+                    $('#second-div').slideUp().show();
+                    $('#nav').hide();
+                    $('#inner-resume-cover').hide();
+                    $('#resume-btn-2').hide();
+                    $('#resume-btn').show();
+                
+            })
+            
+
+            $('#less-btn-2').on("click", function () {
+                $('#first-div').slideUp().show();
+                $('#nav').hide();
+                $('#inner-frame-cover').hide();
+                $('#project-btn-2').hide();
+                $('#project-btn').show();
+                
+            })
+            
+
+        });
+
+        
+
+
+
+
+    </script>
+
+    <div id="position">
+
+
+
+        <!-- <div class="container">
+        <nav>
+            <h1>Ethan Rogers</h1>
+        </nav>
+    </div> -->
+
+        <!-- Nav -->
+        <!-- <button id="less-title">MY WORK</button> -->
+        <div id="nav">
+            <div id="less-btn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 text-left" id="nav-left">
+                            <h6 id="less-title"><i class="fas fa-angle-down" id="less-btn-arrow"></i> MY WORK</h6>            
+                        </div>
+                        <div class="col-lg-6 text-right" id="nav-right">
+                            <h6 id="my-resume-nav">MY RESUME <i class="fas fa-angle-down" id="less-btn-arrow"></i></h6>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+        <div class="text-center" id="first-div">
+
+            <div class="container">
+                <div class="row" id="current-project">
+                    <div id="details"class="col-lg-4 text-left">
+                        <div id="project-btn"><i class="fas fa-angle-down"></i> Details</div>
+                        <div id="project-btn-2"><i class="fas fa-angle-up"></i> Details</div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <h2 id="current-project-title">
+                            <strong>
+                                <a href="https://grasshopper-learning.herokuapp.com/" target="_blank">My current project</a>
+                            </strong>
+                        </h2>
+                    </div>
+                    <div id="project-git" class="col-lg-4 text-right">
+                        <a href="https://github.com/Ethannnrogers" target="_blank">
+                            <i class="fab fa-github my-work-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="frame-cover"> 
+                <div id="inner-frame-cover">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-6">
+                                    <p>
+                                            Grasshopper is an ongoing project that I started during my time at the UNCC Coding Bootcamp.
+                                       </p><br>
+                                       <p>
+                                            Grasshopper is a platform that stresses the importance of life long learning. The platfrom enables
+                                            users to easily sort through a catalog of courses of anything the user wishes to learn. The
+                                            users also has the ability to create a course based on what they already know, or have learned on 
+                                            the platform. 
+                                       </p><br>
+                                       <p>
+                                           Grasshopper is a full-stack MERN application. The app is built on top of React and uses MongoDB to store data.
+                                           We used passport.js and quill.js for certain functionality of the app. 
+                                       </p>
+                            </div>
+                            <div class="col-md-6">
+                                    <p>I focused on creating and designing the app to compare to any other app on the web. I designed all components 
+                                        of the app from scratch utilizing the power of bootstrap and css. My portion of the app consists of all the:
+                                    </p><br>
+                                    <div id="padding-inner">
+                                        <p>UI/UX</p>
+                                        <p>Branding</p>
+                                        <p>HTML</p>
+                                        <p>CSS</p>
+                                        <p>Bootstrap</p>
+                                    </div>        
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>    
+                
+            </div>
+
+            <iframe id="iframe-1" src="https://grasshopper-learning.herokuapp.com/">
+
+            </iframe>
+
+            
+
+
+            <div id="less-btn-2">
+                <i class="fas fa-angle-double-up"></i>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="text-center" id="second-div">
+
+                <div class="container">
+                        <div class="row" id="current-resume">
+                            <div id="details"class="col-lg-4 text-left">
+                                <div id="resume-btn"><i class="fas fa-angle-down"></i> Details</div>
+                                <div id="resume-btn-2"><i class="fas fa-angle-up"></i> Details</div>
+                            </div>
+                            <div class="col-lg-4 text-center">
+                                <h2 id="current-resume-title">
+                                    <strong>
+                                        <a href="https://ethanrogers-resume.herokuapp.com/" target="_blank">My Resume</a>
+                                    </strong>
+                                </h2>
+                            </div>
+                            <div id="resume-git" class="col-lg-4 text-right">
+                                <a href="https://github.com/Ethannnrogers" target="_blank">
+                                    <i class="fab fa-github my-work-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                <div id="resume-cover"> 
+                        <div id="inner-resume-cover">
+                            <div class="container">
+                                <div class="row text-center">
+                                   <div class="col-md-12">
+                                       <p>I formatted my resume using HTML, CSS, and Bootstrap.</p>
+                                       <a href="myresume.pdf" download="ethan_rogers.pdf"><button id="download">Download</button></a>
+                                   </div>
+                                </div>
+                            </div>
+                           
+                        </div>    
+                        
+                    </div>
+
+            <iframe id="iframe-2" src="https://ethanrogers-resume.herokuapp.com/">
+                    
+            </iframe>
+                
+            <div id="resume-btn-leave">
+                <i class="fas fa-angle-double-up" id="resume-btn-arrow-2"></i>
+            </div>
+        
+         </div>
+
+        
+
+
+        <div class="container text-center" id="landing-div">
+            <div class="row" id="landing-title">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="title-section">
+                        <h2 class="display-2" id="name-3">Ethan Rogers</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+
+                    <div class="arrow bounce" id="scroll">
+                        <h3 id="scroll-txt">SCROLL</h3>
+                        <i class="fas fa-angle-double-down"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container text-center white-txt" id="first-title">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <!-- <div class="title-section" id="name-1">
+                    <h2 class="display-2">Ethan Rogers</h2>
+                </div> -->
+                    <div class="title-section">
+                        <h2 class="display-2" id="name-2">Ethan Rogers</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+
+        <div id="section-1">
+
+            <div id="line"></div>
+            <div class="container logical-height" id="soft-skills">
+
+                <div class="row">
+                    <div class="col-lg-6 text-right col-left">
+                        <h2 class="display-2 soft-skill-title" id="leader">Developer</h2>
+                    </div>
+                    <div class="col-lg-6 text-left ">
+                        <p class="soft-skill" id="leader-text">
+                            I am a front-end developer focused on writing code to produce interactive modern websites
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row media-large">
+                    <div class="col-lg-6 text-right col-left">
+                        <p class="soft-skill" id="thinker-text">I use modern design concepts for creating simple interactive web experiences</p>
+
+                    </div>
+                    <div class="col-lg-6 text-left">
+                        <h2 class="display-2 soft-skill-title" id="thinker">Designer</h2>
+                    </div>
+                </div>
+
+                <div class="row media-small">
+                    <div class="col-lg-6 text-left col-left">
+                        <h2 class="display-2 soft-skill-title" id="thinker-2">Designer</h2>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p class="soft-skill" id="thinker-text-2">I use modern design concepts for creating simple interactive web experiences</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 text-right col-left">
+                        <h2 class="display-2 soft-skill-title" id="student">Creator</h2>
+                    </div>
+                    <div class="col-lg-6 text-left">
+                        <p class="soft-skill" id="student-text">I have a passion for creating brands around innovative concepts and ecommerce stores</p>
+                    </div>
+                </div>
+
+                <div class="row media-large">
+                    <div class="col-lg-6 text-right col-left">
+                        <p class="soft-skill" id="creator-text">I am consistently learning new industry standards to adapt to the vastly changing internet </p>
+
+                    </div>
+                    <div class="col-lg-6 text-left">
+                        <h2 class="display-2 soft-skill-title" id="creator">Student</h2>
+                    </div>
+                </div>
+
+                <div class="row media-small">
+                    <div class="col-lg-6 text-left col-left">
+                        <h2 class="display-2 soft-skill-title" id="creator-2">Student</h2>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <p class="soft-skill" id="creator-text-2">I am consistently learning new industry standards to adapt to the vastly changing internet</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="container text-center white-txt">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="title-section">
+                        <h2 class="display-2 title-text-resize">My Skills</h2>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+
+
+        <div id="line-area-1">
+            <div id="line-2"></div>
+        </div>
+
+
+        <div id="section-2">
+            <div class="container white-txt">
+                <div class="row">
+                    <!-- <div class="col-lg-6" id="hard-skills-left">
+                    <h2 class="display-4 text-center hard-skill-title skills-resize "><strong>Projects</strong></h2>   
+                </div> -->
+                    <div class="col-lg-12" id="hard-skills">
+
+                        <h2 class="display-4 text-right hard-skill-title skills-resize ">
+                            <strong>Languages</strong>
+                        </h2>
+
+                        <h4>HTML5</h4>
+                        <div class="skill-bar-home">
+                            <div id="perc-html"></div>
+                        </div>
+
+
+                        <h4>CSS3</h4>
+                        <div class="skill-bar-home">
+                            <div id="perc-css"></div>
+                        </div>
+
+
+                        <h4>JS / jQuery</h4>
+                        <div class="skill-bar-home">
+                            <div id="perc-js"></div>
+                        </div>
+
+
+
+
+                        <h2 class="display-4 text-right hard-skill-title skills-resize ">
+                            <strong>Technologies</strong>
+                        </h2>
+
+                        <h4>Node.js</h4>
+                        <div class="skill-bar-home">
+                            <div id="perc-node"></div>
+                        </div>
+
+
+                        <h4>Express.js</h4>
+                        <div class="skill-bar-home">
+                            <div id="perc-express"></div>
+                        </div>
+
+
+                        <h4>React</h4>
+                        <div class="skill-bar-home">
+                            <div id="perc-react"></div>
+                        </div>
+
+                        <h4>Git</h4>
+                        <div class="skill-bar-home">
+                            <div id="perc-git"></div>
+                        </div>
+
+                        <h4>Photoshop</h4>
+                        <div class="skill-bar-home">
+                            <div id="perc-photo"></div>
+                        </div>
+
+
+
+                        <h2 class="display-4 text-right hard-skill-title skills-resize ">
+                            <strong>Concepts</strong>
+                        </h2>
+
+                        <h4>Search Engine Optimization</h4>
+                        <div class="skill-bar-home">
+                            <div id="perc-seo"></div>
+                        </div>
+
+                        <h4>Mobile First Design</h4>
+                        <div class="skill-bar-home">
+                            <div id="perc-mbf"></div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="line-area-2">
+            <div id="line-3"></div>
+        </div>
+
+
+
+        <div class="container text-center white-txt" id="contact">
+            <h3 class="display-2 title-text-resize" id="contact-title">Contact</h3>
+            <br>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <form id="form">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" required class="form-control" id="first-name" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" required class="form-control" id="last-name" placeholder="Last name">
+                            </div>
+                        </div>
+                        <br>
+                        <input type="email" required class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="Email">
+                        <br>
+                        <textarea class="form-control" required id="message" type="text" rows="3" name="message" placeholder="Message"></textarea>
+                        <br>
+                        <!-- <button class="btn btn-new" type="submit" id="submit-btn">Send</button> -->
+                        <input class="btn btn-new" type="submit" value="Send" id="submit-btn"></input>
+                    </form>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+
+
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+
+                        <a href="https://www.linkedin.com/in/ethannnrogers/" target="_blank">
+                            <i class="fab fa-linkedin-in footer-icon"></i>
+                        </a>
+
+
+                        <a href="https://github.com/Ethannnrogers" target="_blank">
+                            <i class="fab fa-github footer-icon"></i>
+                        </a>
+                        <!-- <i class="fas fa-code"></i> -->
+
+
+                        <p id="footer-txt">Created by me &copy 2018</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- Navigation -->
+
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+
+</html>

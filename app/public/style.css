@@ -1,0 +1,1111 @@
+#left {
+    background-color: rgb(34, 38, 88);
+    color: white;
+}
+
+.left-section {
+   padding-top: 10px;
+}
+
+#bio {
+   padding-top: 10px;
+}
+
+#resume {
+    border: 2px solid black;
+    width: 100%;
+}
+
+body {
+    padding: 30px;
+    font-family: 'Hind', sans-serif;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.247);
+}
+
+#project-btn {
+    color: rgb(223, 60, 60);
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 14px;
+}
+
+
+#project-btn-2 {
+    color: rgb(223, 60, 60);
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 14px;
+}
+
+
+.my-work-icon {
+    color: rgb(223, 60, 60);
+    font-size: 30px;
+    padding: none!important;
+    position: absolute;
+    top: 20%;
+    right: 4%;
+
+}
+
+a { 
+    color:white!important;
+}
+
+.label {
+    background-color: rgba(0, 0, 0, 0.349);
+    padding: 5px 0px 5px 0px; 
+}
+
+.skill-bar {
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+}
+
+.bar-100 {
+    background-color: white;
+    height: 5px;
+    width: 100%;
+}
+
+.bar-95 {
+    background-color: white;
+    height: 5px;
+    width: 95%;
+}
+
+.animated-bar-95 {
+    -webkit-animation: skillappear 3s!important;
+    animation: skillappear 3s !important;
+    background-color: white;
+    height: 5px;
+    width: 95%;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes skillappear {
+    0%   {width: 0%;}
+    100% {width: 95%;}
+}
+
+/* Standard syntax */
+@keyframes skillappear {
+    0%   {width: 0%;}
+    100% {width: 95%;}
+}
+
+.animated-bar-60 {
+    -webkit-animation: skillappear-2 3s!important;
+    animation: skillappear-2 3s !important;
+    background-color: white;
+    height: 5px;
+    width: 60%;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes skillappear-2 {
+    0%   {width: 0%;}
+    100% {width: 60%;}
+}
+
+/* Standard syntax */
+@keyframes skillappear-2 {
+    0%   {width: 0%;}
+    100% {width: 60%;}
+}
+
+.animated-bar-40 {
+    -webkit-animation: skillappear-3 3s!important;
+    animation: skillappear-3 3s !important;
+    background-color: white;
+    height: 5px;
+    width: 40%;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes skillappear-3 {
+    0%   {width: 0%;}
+    100% {width: 40%;}
+}
+
+/* Standard syntax */
+@keyframes skillappear-3 {
+    0%   {width: 0%;}
+    100% {width: 40%;}
+}
+
+.animated-bar-80 {
+    -webkit-animation: skillappear-4 3s!important;
+    animation: skillappear-4 3s !important;
+    background-color: white;
+    height: 5px;
+    width: 80%;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes skillappear-4 {
+    0%   {width: 0%;}
+    100% {width: 80%;}
+}
+
+/* Standard syntax */
+@keyframes skillappear-4 {
+    0%   {width: 0%;}
+    100% {width: 80%;}
+}
+
+.animated-bar-90 {
+    -webkit-animation: skillappear-6 3s!important;
+    animation: skillappear-6 3s !important;
+    background-color: white;
+    height: 5px;
+    width: 90%;
+}
+
+/* Safari 6.0 - 8.0 */
+@-webkit-keyframes skillappear-6 {
+    0%   {width: 0%;}
+    100% {width: 90%;}
+}
+
+/* Standard syntax */
+@keyframes skillappear-6 {
+    0%   {width: 0%;}
+    100% {width: 90%;}
+}
+
+.animated-bar-85 {
+    -webkit-animation: skillappear-7 3s!important;
+    animation: skillappear-7 3s !important;
+    background-color: white;
+    height: 5px;
+    width: 85%;
+}
+
+/* Safari 7.0 - 8.0 */
+@-webkit-keyframes skillappear-7 {
+    0%   {width: 0%;}
+    100% {width: 85%;}
+}
+
+/* Standard syntax */
+@keyframes skillappear-7 {
+    0%   {width: 0%;}
+    100% {width: 85%;}
+}
+
+.animated-bar-70 {
+    -webkit-animation: skillappear-5 3s!important;
+    animation: skillappear-5 3s !important;
+    background-color: white;
+    height: 5px;
+    width: 70%;
+}
+
+/* Safari 5.0 - 8.0 */
+@-webkit-keyframes skillappear-5 {
+    0%   {width: 0%;}
+    100% {width: 70%;}
+}
+
+/* Standard syntax */
+@keyframes skillappear-5 {
+    0%   {width: 0%;}
+    100% {width: 70%;}
+}
+
+
+.bar-90 {
+    background-color: white;
+    height: 5px;
+    width: 90%;
+}
+
+.bar-85 {
+    background-color: white;
+    height: 5px;
+    width: 85%;
+}
+
+.bar-80 {
+    background-color: white;
+    height: 5px;
+    width: 80%;
+}
+
+.bar-75 {
+    background-color: white;
+    height: 5px;
+    width: 75%;
+}
+
+.bar-70 {
+    background-color: white;
+    height: 5px;
+    width: 70%;
+}
+
+.bar-60 {
+    background-color: white;
+    height: 5px;
+    width: 60%;
+}
+
+.bar-50 {
+    background-color: white;
+    height: 5px;
+    width: 50%;
+}
+
+.bar-40 {
+    background-color: white;
+    height: 5px;
+    width: 40%;
+}
+
+.bar-30 {
+    background-color: white;
+    height: 5px;
+    width: 30%;
+}
+
+.bar-25 {
+    background-color: white;
+    height: 5px;
+    width: 25%;
+}
+
+.right-label {
+    border-top: 1px solid rgba(128, 128, 128, 0.699);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.699);
+    padding: 2px 10px 2px 10px;
+    width: 95%;
+}
+
+.right-break {
+    background-color: rgba(128, 128, 128, 0.699);
+    height: 3px;
+    margin: 2px 0px 2px 0px;
+}
+
+#resume-body {
+    background-color: rgb(223, 60, 60);
+}
+
+#resume {
+    background-color: white;
+}
+/* +==============+ Home Page +==============+ */
+
+
+
+
+#name-1{
+    border-color: rgb(223, 60, 60)!important;
+    color: rgb(223, 60, 60)!important;
+}
+
+#name-2{
+    border-color: white!important;
+    color: white!important;
+    text-shadow: none;
+    }
+#name-3{
+    border-color: rgb(223, 60, 60)!important;
+    color: rgb(223, 60, 60)!important;
+    text-shadow: none!important;
+}
+    
+#position{
+    position: absolute;
+    left:0;
+    right:0;
+    top: 0;
+    width: 100%;
+}
+.bg-color {
+    -webkit-animation: changebg 1s;
+    animation: changebg 1s;
+    background-color: rgb(223, 60, 60);
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes changebg {
+    0%   {background-color: rgb(255, 255, 255);}
+    100% {background-color: rgb(223, 60, 60);}
+}
+
+/* Standard syntax */
+@keyframes changebg {
+    0%   {background-color: rgb(255, 255, 255);}
+    100% {background-color: rgb(223, 60, 60);}
+}
+
+#nav {
+    background-color: white;
+    width: 100%;
+    padding: 8px;
+    position: fixed;
+    height: 35px;
+    top: 0;
+    z-index: 997;
+    text-shadow: none!important;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.137);
+}
+
+#nav-left {
+    position: relative;
+    left: -4%;
+}
+
+#nav-right {
+    position: relative;
+    right: -4%;
+    color: rgba(223, 60, 60, 0.61);
+}
+
+/* testing */
+
+#scroll {
+    position: relative;
+    bottom: -350%;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    text-shadow: none;
+}
+
+#scroll-txt {
+    font-size: 20px;
+}
+/* testing */
+
+#first-div {
+    position: fixed;
+    top: 0; /* take this away */
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background-color: white;
+}
+
+#second-div {
+    position: fixed;
+    top: 0; /* take this away */
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background-color: white;
+}
+
+
+#iframe-1 {
+    height: 600px;
+    width: 87%;
+    border: 5px solid rgb(223, 60, 60);
+    margin-top: -10px;
+    position: relative;
+    z-index: 999;
+    
+}
+
+#iframe-2 {
+    height: 600px;
+    width: 87%;
+    border: 5px solid rgb(223, 60, 60);
+    margin-top: -10px;
+    position: relative;
+    z-index: 999;
+    
+}
+
+.hide {
+    display: none;
+}
+
+#frame-cover {
+    width: 87%;
+    border: 5px solid rgb(223, 60, 60);
+    border-bottom: 2.5px;
+    margin: auto;
+    padding: auto;
+    background-color: rgb(223, 60, 60);
+    color: white;
+}
+#resume-cover {
+    width: 87%;
+    border: 5px solid rgb(223, 60, 60);
+    border-bottom: 2.5px;
+    margin: auto;
+    padding: auto;
+    background-color: rgb(223, 60, 60);
+    color: white;
+}
+
+#inner-frame-cover {
+    text-shadow: none;
+    padding: 30px;
+    font-size: 18px;
+}
+
+#project-detail-btn {
+    color: rgba(223, 60, 60, 0.568);
+    padding: 10px;
+}
+
+.frame-cover-appear {
+    -webkit-animation: framecover .38s;
+    animation: framecover .38s;
+    height: 450px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes framecover {
+    0%   {height: 0;}
+    100% {height: 450px;}
+}
+
+/* Standard syntax */
+@keyframes framecover {
+    0%   {height: 0;}
+    100% {height: 450px;}
+}
+
+.frame-cover-appear-opposite {
+    -webkit-animation: frameopposite .38s;
+    animation: frameopposite .38s;
+    height: 0;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes frameopposite {
+    0%   {height: 450px;}
+    100% {height: 0;}
+}
+
+/* Standard syntax */
+@keyframes frameopposite {
+    0%   {height: 450px;}
+    100% {height: 0;}
+}
+
+.resume-cover-appear {
+    -webkit-animation: resumecover .38s;
+    animation: resumecover .38s;
+    height: 120px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes resumecover {
+    0%   {height: 0;}
+    100% {height: 120px;}
+}
+
+/* Standard syntax */
+@keyframes resumecover {
+    0%   {height: 0;}
+    100% {height: 120px;}
+}
+
+.resume-cover-appear-opposite {
+    -webkit-animation: resumeopposite .38s;
+    animation: resumeopposite .38s;
+    height: 0;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes resumeopposite {
+    0%   {height: 120px;}
+    100% {height: 0;}
+}
+
+/* Standard syntax */
+@keyframes resumeopposite {
+    0%   {height: 120px;}
+    100% {height: 0;}
+}
+
+a {
+    color: rgb(223, 60, 60)!important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bottom-up {
+    -webkit-animation: bottomup 1s;
+    animation: bottomup 1s;
+    top: 0;
+}
+
+#current-project {
+    color: rgb(223, 60, 60);
+    padding-top: 25px;
+    /* margin-top: 30px; */
+    text-shadow: none;
+}
+
+#current-project-title {
+    font-size: 35px;
+
+}
+
+#current-resume {
+    color: rgb(223, 60, 60);
+    padding-top: 25px;
+    /* margin-top: 30px; */
+    text-shadow: none;
+}
+
+#current-resume-title {
+    font-size: 35px;
+
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bottomup {
+    0%   {top: 110%;}
+    100% {top: 0;}
+}
+
+/* Standard syntax */
+@keyframes bottomup {
+    0%   {top: 110%;}
+    100% {top: 0;}
+}
+
+.bottom-down {
+    -webkit-animation: bottomdown 1s;
+    animation: bottomdown 1s;
+    top: 110%;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bottomdown {
+    0%   {top: 0;}
+    100% {top: 110%;}
+}
+
+/* Standard syntax */
+@keyframes bottomdown {
+    0%   {top: 0;}
+    100% {top: 110%;}
+}
+
+
+
+#more-btn-arrow {
+    color: rgba(255, 255, 255, 0.61)!important;
+    font-size: 30px;
+}
+
+#more-btn {
+    text-align: center; 
+    margin: 30px 0px 5px 0px;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+#more-title {
+    color: rgba(255, 255, 255, 0.61)!important;
+}
+
+#less-btn-arrow {
+    color: rgb(223, 60, 60, 0.61)!important;
+    font-size: 15px;
+}
+
+#less-btn {
+    text-align: center; 
+}
+
+#less-title {
+    color: rgba(223, 60, 60, 0.61)!important;
+    font-size: 15px;
+    /* border: solid 2px rgba(223, 60, 60, 0.61);
+    border-radius: 25px;
+    background-color: transparent; */
+    
+}
+
+
+
+#less-btn-arrow-2 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.226);
+}
+
+
+#less-btn-2 {
+    text-shadow: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 6px 0px 2px 0px;
+    border: 5px solid white;
+    background-color: rgba(223, 60, 60);
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.171);
+}
+
+#less-btn-2:hover {
+    background-color: rgba(223, 60, 60, 0.76);
+
+}
+
+#resume-btn {
+    color: rgb(223, 60, 60);
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 14px;
+}
+
+
+#resume-btn-2 {
+    color: rgb(223, 60, 60);
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 14px;
+}
+
+#resume-btn-leave:hover {
+    background-color: rgba(223, 60, 60, 0.76);
+
+}
+
+#resume-btn-leave {
+    text-shadow: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 6px 0px 2px 0px;
+    border: 5px solid white;
+    background-color: rgba(223, 60, 60);
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.171);
+}
+
+#download {
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.171);
+    font-weight: bold;
+    height: 50px;
+    width: 20%;
+}
+
+#download:hover {
+    background-color: white;
+    color: rgb(223, 60, 60);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.171);
+}
+
+#less-title-2 {
+    color: rgba(223, 60, 60, 0.61)!important;
+    font-size: 20px;
+}
+
+#pb {
+    position: relative;
+}
+
+.display-none {
+    display: none;
+}
+
+#first-title {
+    padding-top: 250px;
+}
+
+#landing-div {
+    padding-top: 250px;
+    color: rgb(223, 60, 60);
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+/* #landing-title {
+    border:solid 5px rgb(223, 60, 60);
+} */
+
+.arrow {
+    text-align: center;
+  }
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+.white-txt {
+    color: white;
+}
+
+
+
+
+
+.title-section {
+    border: 5px solid white;
+}
+
+.color-section {
+    width: 100%;
+    height: auto;
+    background-color: rgb(28, 201, 80);
+    position: absolute;
+    right: 0;
+    left: 0;
+    color: white;
+}
+
+.logical-height {
+    height: 1000px;
+}
+
+#line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 5px solid white;
+    margin-left: -3px;
+}
+
+.line-exist {
+    -webkit-animation: lineappear 3s;
+    animation: lineappear 3s;
+    height: 100%;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes lineappear {
+    0%   {height: 0%;}
+    100% {height: 100%;}
+}
+
+/* Standard syntax */
+@keyframes lineappear {
+    0%   {height: 0%;}
+    100% {height: 100%;}
+}
+
+
+#line-2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 5px solid white;
+    height: 100%;
+    margin-left: -3px;
+}
+
+#line-3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 5px solid white;
+    height: 100%;
+    margin-left: -3px;
+}
+
+
+#soft-skills {
+    padding: 50px;
+}
+
+.col-left {
+    /* border-right: 5px solid black; */
+}
+
+.soft-skill-title {
+    padding: 60px 50px 60px 50px;
+}
+
+.soft-skill {
+    padding: 60px 40px 60px 40px;
+    font-size: 28px;
+}
+
+#section-1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: 0;
+    left: 0;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+#section-2 {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    border-width: 100%;
+    height: auto;
+    position: relative;
+    width: 100%;
+    
+}
+
+#line-area-1 {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    right: 0;
+    left: 0;
+    color: white;
+}
+
+#line-area-2 {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    right: 0;
+    left: 0;
+    color: white;
+}
+
+#contact {
+    padding: 20px 20px 40px 20px;
+    border: 5px solid white;
+    width: 59%;
+}
+
+#contact-title {
+    border-bottom: 5px solid white;
+    padding-bottom: 25px;
+}
+
+footer {
+    padding: 50px 0px 5px 0px;
+    text-align: center;
+    font-size: 30px;
+    color:white
+}
+
+.footer-icon {
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.904);
+    height: 55px;
+    width: 55px;
+    margin: 10px;
+    color: white;
+}
+
+.footer-icon:hover {
+    background-color: white;
+    border: 2px solid white;
+    color:rgb(223, 60, 60);
+    -webkit-transition: background-color .5s, color .5s;
+}
+
+#footer-txt {
+    color: rgba(255, 255, 255, 0.705);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+input, textarea {
+    background-color: transparent!important;
+    color: white!important;
+    border-radius: 0!important;
+    border: 1px solid white!important;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.87)!important;
+
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.87)!important;
+}
+
+textarea:focus::placeholder {
+    color: transparent!important;
+}
+
+input:focus::placeholder {
+    color: transparent!important;
+}
+
+*:focus {
+    outline: none!important;
+    -webkit-appearance:none!important;
+    box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    border-color: none!important;
+}
+
+.btn-new {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border:  1px solid white;
+    border-radius: 0;
+    color: rgb(223, 60, 60);
+}
+
+.btn-new:hover {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.87);
+    -webkit-transition: background-color .5s, color .5s;
+}
+
+.skill-bar-home {
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.247);
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#hard-skills {
+    padding: 100px;
+}
+
+#hard-skills-left {
+    padding: 100px;
+}
+
+
+.hard-skill-title {
+    margin-bottom: 30px;
+}
+
+
+
+/* +==============+ Media Queries +==============+ */
+
+@media only screen and (max-width: 1000px) {
+  #line {
+    display: none;
+    }
+  .soft-skill-title {
+    padding: 20px 10px 0px 10px;
+    text-align: center!important;
+    font-size: 50px;
+    }
+    .soft-skill {
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    text-align: center!important;
+    }
+    .media-large {
+        display: none;
+    }
+    .media-small {
+        display: show;
+    }
+    #section-1 {
+       margin-bottom: -240px;
+    }
+    .title-text-resize {
+        font-size: 40px!important;
+        padding: 10px;
+    }
+    .skills-resize {
+        text-align: center!important;
+        font-size: 40px!important;
+        text-decoration: underline;
+    }
+    #contact {
+        width: 100%;
+        /* border-left: none;
+        border-right: none; */
+    }
+   #scroll {
+       font-size: 70px!important;
+   }
+   #current-project-title {
+        font-size: 25px;
+   }
+   #current-project {
+       text-align: center!important;
+   }
+   #current-resume-title {
+    font-size: 25px;
+}
+#current-resume {
+   text-align: center!important;
+}
+   #details {
+       display: none;
+   }
+   #project-git {
+       display: none;
+   }
+   #section-1 {
+        margin-top: -120px;
+   }
+   #nav {
+       display: none!important;
+   }
+}
+
+@media only screen and (max-width: 420px) {
+    #contact {
+        border-left: none;
+        border-right: none;
+    }
+    #name-3 {
+        margin-top: -150px;
+    }
+    #first-title {
+        margin-top: -200px;
+    }
+    #scroll {
+        position: relative;
+        bottom: -80%;
+        left: 0;
+        right: 0;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1001px) {
+    .media-large {
+        display: show;
+    }
+    .media-small {
+        display: none;
+    }
+}
