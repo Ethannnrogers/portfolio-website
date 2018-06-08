@@ -1077,9 +1077,9 @@ input:focus::placeholder {
    #section-1 {
         margin-top: -120px;
    }
-   /* #nav {
+   #nav {
        display: none!important;
-   } */
+   }
    #nav-right {
        margin-top: -25px;
    }

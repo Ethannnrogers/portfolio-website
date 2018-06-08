@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
-app.use(express.static(__dirname + "public"));
+app.use(express.static(path.join(__dirname, "app", "public")));
 
 app.post('/send', function(req, res, next) {
   const transporter = nodemailer.createTransport({
